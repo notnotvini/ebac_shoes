@@ -71,6 +71,11 @@ header .container li a {
     flex: 3;
 }
 
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
 .about p:nth-child(3) {
     margin-top: 16px;
 }
@@ -167,6 +172,10 @@ footer {
         margin-right: 0px;
         margin-bottom: 20px;
         border-radius: 12px;
+    }
+
+    .about p {
+        line-height: 1.5rem;
     }
 
     .products ul {
