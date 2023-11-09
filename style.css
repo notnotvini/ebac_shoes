@@ -17,7 +17,7 @@ header {
 
 header h1 {
     color: #fb8ad3;
-    font-size: 18px;
+    font-size: 2rem;
     font-family: 'Share Tech', sans-serif;
     font-weight: bold;
     margin-left: 16px;
@@ -25,7 +25,7 @@ header h1 {
 
 .container {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -40,20 +40,17 @@ header .container li {
 
 header .container li a {
     color: #fb8ad3;
+    font-size: 1.2rem;
     font-family: 'Share Tech', sans-serif;
     text-decoration: none;
     margin-right: 16px;
 }
 
 .about {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
     text-align: justify;
-    padding: 16px;
     color: #150741;
 }
 
@@ -64,15 +61,27 @@ header .container li a {
 }
 
 .about img {
-    width: 40%;
-    margin-right: 16px;
+    flex: 2;
+    width: 400px;
+    margin-right: 32px;
+    border-radius: 16px;
+}
+
+.about div {
+    flex: 3;
+}
+
+.about p:nth-child(3) {
+    margin-top: 16px;
+}
+
+.about, .products {
+    margin: 0 auto;
+    padding: 16px;
 }
 
 .products {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 16px;
+    margin-bottom: 40px;
 }
 
 .products h2 {
@@ -91,6 +100,7 @@ header .container li a {
 .products img {
     width: 100%;
     margin-bottom: 8px;
+    border-radius: 8px;
 }
 
 .products h3 {
@@ -122,6 +132,26 @@ header .container li a {
     color: #150741;
 }
 
+footer {
+    width: 100%;
+    padding: 4px;
+    color: #fb8ad3;
+    font-family: 'Share Tech', sans-serif;
+    background: #150741;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer {
+    margin: 8px;
+}
+
+.footer p, .footer a {
+    font-size: 1.1rem;
+    color: #fb8ad3;
+    font-family: 'Share Tech', sans-serif;
+}
+
 @media (max-width: 1023px) {
     .about {
         display: block;
@@ -131,10 +161,12 @@ header .container li a {
         padding: 16px;
         color: #150741;
     }
-    
+
     .about img {
         width: 100%;
+        margin-right: 0px;
         margin-bottom: 20px;
+        border-radius: 12px;
     }
 
     .products ul {
@@ -142,7 +174,21 @@ header .container li a {
         grid-template-columns: repeat(2, 48%);
         justify-content: space-between;
         list-style: none;
-        row-gap: 40px;
+    }
+
+    .products img {
+        border-radius: 8px;
+    }
+
+    .products li {
+        margin-bottom: 16px;
+        background-color: rgba(251, 138, 211, 0.4);
+        border-radius: 8px;
+        padding: 8px;
+    }
+
+    .products button {
+        margin: 0px;
     }
 }
 
